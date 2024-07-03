@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}CTF Challenge 1{% endblock %}
+
+{% block content %}
+<h1>Decode the Message!</h1>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="input1" name="input1" placeholder="What is the first part of the key?" autofocus>
+    </div>
+    <div class="mb-3">
+        <!-- Hidden Message: Hello -->
+        <input type="text" class="form-control" id="input2" name="input2" placeholder="Find me if you can :)">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="input3" name="input3" placeholder="Complete the sequence!">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
+    <div class="mb-3">
+        <p id="link"></p> <!-- The link will be displayed here -->
+    </div>
+{% endblock %}
+
+{% block script %}
+  function PrintLink() {
+    var input1 = document.getElementById("input1").value;
+    var input2 = document.getElementById("input2").value;
+    var input3 = document.getElementById("input3").value;
+    var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input1 + input2 + input3;
+    alert("Check if this lisk is leading to next one: " + link);
+    document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link + "</a>";
+
+  }
+{% endblock %}
