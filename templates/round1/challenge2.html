@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container">
   <h5 class="content-wrap-box">
-    Submit your Answer for Challenge 1 <a href="/">Here</a>
+    Submit your Answer for Challenge 2 <a href="/">Here</a>
   </h5>
 </div>
 <h1 class="mt-4">Round 1: CTS Challenge 2</h1>
@@ -13,9 +13,10 @@
 <h3>Find the Flag inside this Audio</h3>
 
 <audio controls>
-    <source src="{{ url_for('static', filename='your_audio_file.wav') }}" type="audio/ogg">
-    Your browser does not support the audio element.
+  <source src="{{ url_for('static', filename='cts-audio.wav') }}" type="audio/ogg">
+  Your browser does not support the audio element.
 </audio>
+
 <div class="hint">
     <p>Listen carefully to decode the next clue!</p>
 </div>

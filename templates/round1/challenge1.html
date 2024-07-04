@@ -4,38 +4,40 @@
 
 {% block content %}
 <div class="container">
-    <h5 class="content-wrap-box">
-      Submit your Answer for Challenge 1 <a href="/">Here</a>
-    </h5>
+  <h5 class="content-wrap-box">
+    Submit your Answer for Challenge 1 <a href="/">Here</a>
+  </h5>
 </div>
 
 <h1>Round 1: CTS Challenge 1</h1>
 
 <h3>Find out the Message! "Don't trust the Order ;)"</h3>
-    <div class="mb-3">
-        <input type="text" class="form-control" id="input1" name="input1" placeholder="What is the third word in the event tag line?" autofocus>
-    </div>
-    <div class="mb-3">
-        <!-- Answer: Pixel -->
-        <input type="text" class="form-control" id="input2" name="input2" placeholder="Find me if you can :)">
-    </div>
-    <div class="mb-3">
-        <input type="text" class="form-control" id="input3" name="input3" placeholder="What is the unit of Frequency">
-    </div>
-    <button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
-    <div class="mb-3">
-        <p id="link"></p> <!-- The link will be displayed here -->
-    </div>
+<div class="mb-3">
+  <input type="text" class="form-control" id="input1" name="input1"
+    placeholder="What is the third word in the event tag line?" autofocus>
+</div>
+<div class="mb-3">
+  <!-- Answer: Pixel -->
+  <input type="text" class="form-control" id="input2" name="input2" placeholder="Find me if you can :)">
+</div>
+<div class="mb-3">
+  <input type="text" class="form-control" id="input3" name="input3" placeholder="What is the unit of Frequency">
+</div>
+<button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
+<div class="mb-3">
+  <p id="link"></p> <!-- The link will be displayed here -->
+</div>
 {% endblock %}
 
 {% block script %}
-  function PrintLink() {
-    var input1 = document.getElementById("input1").value;
-    var input2 = document.getElementById("input2").value;
-    var input3 = document.getElementById("input3").value;
-    var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input1 + input2 + input3;
-    alert("Check if this lisk is leading to next one: " + link);
-    document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link + "</a>";
+function PrintLink() {
+var input1 = document.getElementById("input1").value;
+var input2 = document.getElementById("input2").value;
+var input3 = document.getElementById("input3").value;
+var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input1 + input2 + input3;
+alert("Check if this lisk is leading to next one: " + link);
+document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link
+  + "</a>";
 
-  }
+}
 {% endblock %}
