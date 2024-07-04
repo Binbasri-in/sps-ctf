@@ -6,7 +6,7 @@ app = Flask(__name__)
 def challenge_one():
     return render_template('round1/challenge1.html')
 
-@app.route('/DominatePixelHertz')
+@app.route('/HertzDominatePixel')
 def challenge_two():
     return render_template('round1/challenge2.html')
 
@@ -14,7 +14,7 @@ def challenge_two():
 def round2():
     return render_template('round2/challenge1.html')
 
-@app.route('/flag21')
+@app.route('/ctse')
 def flag21():
     return render_template('round2/challenge2.html')
 
