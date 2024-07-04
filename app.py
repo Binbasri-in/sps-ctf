@@ -26,13 +26,13 @@ def flag21():
 def flag22():
     return render_template('round2/challenge3.html')
 
-@app.route('/round3')
+@app.route('/extra')
 def round3():
-    return render_template('round3/challenge1.html')
+    return render_template('extra/challenge1.html')
 
-@app.route('/flag31')
+@app.route('/extra2')
 def flag31():
-    return render_template('round3/challenge2.html')
+    return render_template('extra/challenge2.html')
 
 
 # for 404 error
