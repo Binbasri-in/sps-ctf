@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 
-{% block title %}CTF Challenge 2{% endblock %}
+{% block title %}Round 1: CTF Challenge 2{% endblock %}
 
 {% block content %}
-<h1>You've Made It to Stage 2!</h1>
-<p>Your combined answer is: <strong> Nice</strong></p>
+<div class="container">
+  <h5 class="content-wrap-box">
+    Submit your Answer for Challenge 1 <a href="/">Here</a>
+  </h5>
+</div>
+<h1 class="mt-4">Round 1: CTS Challenge 2</h1>
+
+<h3>Find the Flag inside this Audio</h3>
+
 <audio controls>
     <source src="{{ url_for('static', filename='your_audio_file.wav') }}" type="audio/ogg">
     Your browser does not support the audio element.

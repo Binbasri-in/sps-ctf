@@ -1,18 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}CTF Challenge 1{% endblock %}
+{% block title %}Round 1: CTF Challenge 1{% endblock %}
 
 {% block content %}
-<h1>Decode the Message!</h1>
+<div class="container">
+    <h5 class="content-wrap-box">
+      Submit your Answer for Challenge 1 <a href="/">Here</a>
+    </h5>
+</div>
+
+<h1>Round 1: CTS Challenge 1</h1>
+
+<h3>Find out the Message! "Don't trust the Order ;)"</h3>
     <div class="mb-3">
-        <input type="text" class="form-control" id="input1" name="input1" placeholder="What is the first part of the key?" autofocus>
+        <input type="text" class="form-control" id="input1" name="input1" placeholder="What is the third word in the event tag line?" autofocus>
     </div>
     <div class="mb-3">
-        <!-- Hidden Message: Hello -->
+        <!-- Answer: Pixel -->
         <input type="text" class="form-control" id="input2" name="input2" placeholder="Find me if you can :)">
     </div>
     <div class="mb-3">
-        <input type="text" class="form-control" id="input3" name="input3" placeholder="Complete the sequence!">
+        <input type="text" class="form-control" id="input3" name="input3" placeholder="What is the unit of Frequency">
     </div>
     <button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
     <div class="mb-3">
