@@ -10,6 +10,10 @@ def challenge_one():
 def challenge_two():
     return render_template('round1/challenge2.html')
 
+@app.route('/lunch')
+def lunch():
+    return render_template('round1/lunch.html')
+
 @app.route('/round2')
 def round2():
     return render_template('round2/challenge1.html')
