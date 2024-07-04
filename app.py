@@ -14,7 +14,7 @@ def challenge_two():
 def lunch():
     return render_template('round1/lunch.html')
 
-@app.route('/round2')
+@app.route('/logic-lock')
 def round2():
     return render_template('round2/challenge1.html')
 
