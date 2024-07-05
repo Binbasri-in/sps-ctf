@@ -4,27 +4,24 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def challenge_one():
-    return render_template('round1/challenge1.html')
+    return render_template('round2/challenge1.html')
 
-@app.route('/HertzDominatePixel')
-def challenge_two():
-    return render_template('round1/challenge2.html')
+# @app.route('/HertzDominatePixel')
+# def challenge_two():
+#     return render_template('round1/challenge2.html')
 
-@app.route('/lunch')
-def lunch():
-    return render_template('round1/lunch.html')
+# @app.route('/lunch')
+# def lunch():
+#     return render_template('round1/challenge3.html')
 
-# @app.route('/logic-lock')
-# def round2():
-#     return render_template('round2/challenge1.html')
 
-# @app.route('/ctse')
-# def flag21():
-#     return render_template('round2/challenge2.html')
+@app.route('/ctse')
+def flag21():
+    return render_template('round2/challenge2.html')
 
-# @app.route('/gate')
-# def flag22():
-#     return render_template('round2/challenge3.html')
+@app.route('/hidden-link')
+def flag22():
+    return render_template('round2/challenge3.html')
 
 # @app.route('/jawed')
 # def flag23():
