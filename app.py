@@ -23,9 +23,9 @@ def flag21():
 def flag22():
     return render_template('round2/challenge3.html')
 
-# @app.route('/jawed')
-# def flag23():
-#     return render_template('round2/final.html')
+@app.route('/jawed')
+def flag23():
+    return render_template('round2/final.html')
 
 # @app.route('/extra')
 # def round3():
