@@ -22,9 +22,13 @@ def round2():
 def flag21():
     return render_template('round2/challenge2.html')
 
-@app.route('/flag22')
+@app.route('/gate')
 def flag22():
     return render_template('round2/challenge3.html')
+
+@app.route('/jawed')
+def flag23():
+    return render_template('round2/final.html')
 
 @app.route('/extra')
 def round3():

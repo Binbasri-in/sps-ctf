@@ -12,14 +12,19 @@
 <h1>Round 2: CTS Challenge 3</h1>
 <h3>Log In</h3>
 <div class="mb-3">
-    <input type="text" class="form-control" placeholder="Password">
+    <input type="text" class="form-control" placeholder="Password" name="input1" id="input1">
 </div>
-<p><button class="btn btn-secondary">Log in</button></p>
+<button class="btn btn-secondary" onclick="redirectToPage()">Log in</button>
 
 {% endblock %}
 
-{% block scripts %}
-
+{% block script %}
+function redirectToPage() {
+  const input = document.getElementById('input1').value;
+  const baseUrl = 'https://sps-ctf-f4d6815cae2a.herokuapp.com/';
+  const url = baseUrl + input;
+  window.location.href = url;
+}
 
 
 {% endblock %}
