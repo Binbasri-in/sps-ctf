@@ -26,7 +26,7 @@ def sinkqr():
 def sinkqrwrong():
     return render_template('day2/Wrong.html')
 
-@app.route('/Decode')
+@app.route('/decode@cts')
 def decode():
     return render_template('round1/lunch.html')
 
