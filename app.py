@@ -6,6 +6,10 @@ app = Flask(__name__)
 def challenge_one():
     return render_template('day2/challenge1.html')
 
+# @app.route('/', methods=['GET', 'POST'])
+# def challenge_one():
+#     return render_template('day2/last-challenge.html')  # activate after lunch
+
 @app.route('/Datacenter')
 def datacenter():
     return render_template('day2/Datacenter.html')
@@ -30,9 +34,11 @@ def sinkqrwrong():
 def decode():
     return render_template('round1/lunch.html')
 
+
+
 # @app.route('/extra')
 # def round3():
-#     return render_template('extra/challenge1.html')
+#     return render_template('eyantra.html')
 
 # @app.route('/extra2')
 # def flag31():

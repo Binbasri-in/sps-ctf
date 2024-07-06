@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Round 2: CTF Challenge 2{% endblock %}
+
+{% block content %}
+
+<h1>Endgame</h1>
+
+
+<audio controls>
+  <source src="{{ url_for('static', filename='cts-last.mp3') }}" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="hint">
+    <p>Find me first and you have a chance at gold.</p>
+</div>
+
+
+{% endblock %}
