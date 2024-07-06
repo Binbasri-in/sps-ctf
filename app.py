@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/start', methods=['GET', 'POST'])
 def challenge_one():
     return render_template('day2/challenge1.html')
 
