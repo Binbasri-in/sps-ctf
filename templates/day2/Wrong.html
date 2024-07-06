@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Wrong QR{% endblock %}
+
+{% block content %}
+<!-- <div class="container">
+  <h5 class="content-wrap-box">
+    Submit your Answer for Challenge 3 <a href="https://forms.gle/eq4z3khq88PA8w5F6">Here</a>
+  </h5>
+</div> -->
+
+<h1>Wrong Place</h1>
+
+
+
+<img src="{{ url_for('static', filename='lmao.jpg') }}" alt="Sink Wrong">
+
+
+
+<!-- <button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
+<div class="mb-3">
+  <p id="link"></p> <!-- The link will be displayed here -->
+</div> -->
+{% endblock %}
+
+{% block script %}
+
+function PrintLink() {
+  var input1 = document.getElementById("input1").value;
+  var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input1;
+  alert("Check if this lisk is leading to next one: " + link);
+  document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link
+    + "</a>";
+
+}
+{% endblock %}

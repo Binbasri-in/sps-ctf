@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Challenge 2{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h5 class="content-wrap-box">
+    Submit your Answer for Challenge 2 <a href="https://forms.gle/FoK2tknHQLa26J2c9">Here</a>
+  </h5>
+</div>
+
+<h1>Challenge 2</h1>
+
+<h3>I have something that you'll need. Figure that out, and then all you have to do is go back to guy who is making you run and tell him what i have.</h3>
+
+<!-- 0xCafe Sinking -->
+ 
+<div class="mb-3">
+    <input type="text" class="form-control" id="input3" name="input3" placeholder="The Guy making you run will type here">
+</div>
+
+<button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
+<div class="mb-3">
+  <p id="link"></p> 
+</div>
+{% endblock %}
+
+{% block script %}
+function PrintLink() {
+
+var input3 = document.getElementById("input3").value;
+var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input3;
+alert("Check if this lisk is leading to next one: " + link);
+document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link
+  + "</a>";
+
+}
+{% endblock %}

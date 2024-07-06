@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Round 1: CTF Challenge 1{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h5 class="content-wrap-box">
+    Submit your Answer for Challenge 1 <a href="https://forms.gle/FoK2tknHQLa26J2c9">Here</a>
+  </h5>
+</div>
+
+<h1>Challenge 1</h1>
+
+<h3>Layz Tarzan Tour</h3>
+
+<div class="mb-3">
+  <input type="text" class="form-control" id="input3" name="input3" placeholder="Mondegreens">
+</div>
+<button type="button" class="btn btn-primary" onclick="PrintLink()">Unlock!</button>
+<div class="mb-3">
+  <p id="link"></p> <!-- The link will be displayed here -->
+</div>
+{% endblock %}
+
+{% block script %}
+function PrintLink() {
+var input3 = document.getElementById("input3").value;
+var link = "https://sps-ctf-f4d6815cae2a.herokuapp.com/" + input3;
+alert("Check if this lisk is leading to next one: " + link);
+document.getElementById("link").innerHTML = "Check if this lisk is leading to next one: <a href='" + link + "'>" + link
+  + "</a>";
+
+}
+{% endblock %}

@@ -4,28 +4,31 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def challenge_one():
-    return render_template('round2/challenge1.html')
+    return render_template('day2/challenge1.html')
 
-# @app.route('/HertzDominatePixel')
-# def challenge_two():
-#     return render_template('round1/challenge2.html')
+@app.route('/Datacenter')
+def datacenter():
+    return render_template('day2/Datacenter.html')
 
-# @app.route('/lunch')
-# def lunch():
-#     return render_template('round1/challenge3.html')
+@app.route('/data-qr')
+def dataqr():
+    return render_template('day2/challenge2.html')
 
+@app.route('/true')
+def sink():
+    return render_template('day2/Sink.html')
 
-@app.route('/ctse')
-def flag21():
-    return render_template('round2/challenge2.html')
+@app.route('/sink-qr')
+def sinkqr():
+    return render_template('day2/challenge3.html')
 
-@app.route('/hidden-link')
-def flag22():
-    return render_template('round2/challenge3.html')
+@app.route('/sink-qr-wrong')
+def sinkqrwrong():
+    return render_template('day2/Wrong.html')
 
-@app.route('/jawed')
-def flag23():
-    return render_template('round2/final.html')
+@app.route('/Decode')
+def decode():
+    return render_template('round1/lunch.html')
 
 # @app.route('/extra')
 # def round3():
