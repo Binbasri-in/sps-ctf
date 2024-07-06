@@ -22,13 +22,13 @@ def dataqr():
 def sink():
     return render_template('day2/Sink.html')
 
-@app.route('/sink-qr')
-def sinkqr():
-    return render_template('day2/challenge3.html')
+# @app.route('/sink-qr')
+# def sinkqr():
+#     return render_template('day2/challenge3.html')
 
-@app.route('/sink-qr-wrong')
-def sinkqrwrong():
-    return render_template('day2/Wrong.html')
+# @app.route('/sink-qr-wrong')
+# def sinkqrwrong():
+#     return render_template('day2/Wrong.html')
 
 @app.route('/decode@cts')
 def decode():
