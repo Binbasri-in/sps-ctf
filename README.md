@@ -9,6 +9,7 @@ The challenge involves finding words hidden in different places. one in the webp
 2. [Visualize Audio](https://sps-ctf-289847cf519c.herokuapp.com/HertzDominatePixel)
 
 The challenge requires visualizing an audio file to find a flag. The audio file is provided, and the task is to visualize it using a tool like Audacity or Sonic Visualiser. The flag is hidden in the visual representation of the audio.
+
 3. [Logic Gates Puzzle](https://sps-ctf-289847cf519c.herokuapp.com/logic-lock)
 
 The challenge is a simple logic gates circuit where they can trased back from output to input to see the final code.
